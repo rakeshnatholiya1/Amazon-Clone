@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/ShoppingCart.css";
-function ShoppingCart() {
+function ShoppingCart({ cart, RemoveFromCart }) {
   return (
     <div className="checkout">
       <div className="checout_left">
@@ -14,24 +14,33 @@ function ShoppingCart() {
           <h3>Hello Rakesh</h3>
           <h2 className="checkout_title">Your Shopping Basket</h2>
         </div>
-        <div className="checkout_product">
-          <img
-            src="https://m.media-amazon.com/images/I/61refnz8nnS._AC_UL320_.jpg"
-            alt=""
-          />
-          <div className="checkout_product_info">
-            <p className="checkout_product_title">Product Name</p>
-            <p className="checkout_product_price">
-              <strong>600.00 *1 = ₹ 600</strong>
-            </p>
-              <button>Remove from Basket</button>
-          </div>
-        </div>
+
+        {cart?.line_items?.map((item) => {
+          return (
+            <div className="checkout_product" key={item.id}>
+              <img src={item.image.url} alt="" />
+              <div className="checkout_product_info">
+                <p className="checkout_product_title">{item.name}</p>
+                <p className="checkout_product_price">
+                  <strong>
+                    {item.price.formatted_with_symbol} * {item.quantity} ={" "}
+                    {cart.currency.symbol}
+                    {item.price.raw * item.quantity}
+                  </strong>
+                </p>
+                <button onClick={() => RemoveFromCart(item.id)}>
+                  Remove from Basket
+                </button>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <div className="checkout_right">
         <div className="subtotal">
           <p>
-            Subtotal (2 items): <strong>1499.00</strong>
+            Subtotal ({cart?.total_items}):{" "}
+            <strong>{cart?.subtotal.formatted_with_symbol}</strong>
           </p>
           <small className="subtotal_gift">
             <input type="checkbox" /> This order conatin a gift

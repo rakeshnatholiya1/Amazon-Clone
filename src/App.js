@@ -7,23 +7,34 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [productsList, setProductsList] = useState([]);
-  const [ShoppingCart, setShoppingCart] = useState([]);
+  const [cart, setCart] = useState([]);
   const fetchProducts = async () => {
     const response = await commerce.products.list();
     setProductsList([response.data]);
   };
   const addToCart = async (productId, quntity) => {
     const response = await commerce.cart.add(productId, quntity);
-    console.log(response.cart);
+    setCart(response);
+    console.log(response)
   };
+
+  const fetchCart = async ()=>{
+    setCart(await commerce.cart.retrieve())
+  }
+  const RemoveFromCart = async (productId)=>{
+    const response = await commerce.cart.remove(productId);
+    setCart(response.cart)
+  }
+
   useEffect(() => {
     fetchProducts();
+    fetchCart();
   }, []);
 
   return (
     <Router>
       <div className="App">
-        <Header />
+        <Header cart={cart} />
         <Switch>
           <Route exact path="/">
             <div className="banner">
@@ -32,10 +43,10 @@ function App() {
                 alt=""
               />
             </div>
-            <Products productsList={productsList} addToCart={addToCart} />
+            <Products productsList={productsList} addToCart={addToCart}  />
           </Route>
           <Route exact path="/ShoppingCart">
-            <ShoppingCart />
+            <ShoppingCart cart={cart} RemoveFromCart={RemoveFromCart} />
           </Route>
         </Switch>
       </div>

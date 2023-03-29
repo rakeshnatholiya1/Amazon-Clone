@@ -5,7 +5,7 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import { Link } from "react-router-dom";
 
-function header() {
+function header({ cart }) {
   return (
     <>
       <div className="header">
@@ -41,7 +41,7 @@ function header() {
             <Link to="/ShoppingCart">
               <ShoppingCartIcon />
             </Link>
-            <span>5</span>
+            <span>{cart?.total_items}</span>
           </div>
         </div>
       </div>

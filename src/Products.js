@@ -2,7 +2,7 @@ import React from "react";
 import "./css/Products.css";
 
 function Products({ productsList, addToCart }) {
-  console.log(productsList[0]);
+  // console.log(addToCart);
   return (
     <div className="products_wrap">
       {productsList[0]?.map((prod) => {
