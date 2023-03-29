@@ -2,19 +2,19 @@ import React from "react";
 import "./css/Products.css";
 
 function Products({ productsList, addToCart }) {
-  console.log(productsList);
+  console.log(productsList[0]);
   return (
     <div className="products_wrap">
-      {productsList.map((item) => {
+      {productsList[0]?.map((prod) => {
         return (
           <>
-            <div className="product" key={item}>
-              <img src={item[0].image.url} alt="" />
+            <div className="product" key={prod}>
+              <img src={prod.image.url} alt="" />
 
-              <h3>{item[0].name}</h3>
+              <h3>{prod.name}</h3>
 
-              <p>{item[0].price.formatted_with_symbol}</p>
-              <button onClick={() => addToCart(item.id, 1)}>Add to Cart</button>
+              <p>{prod.price.formatted_with_symbol}</p>
+              <button onClick={() => addToCart(prod.id, 1)}>Add to Cart</button>
             </div>
           </>
         );
