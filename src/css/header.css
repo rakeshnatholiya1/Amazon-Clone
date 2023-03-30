@@ -73,18 +73,23 @@
 }
 .header_bottom {
   background: #232f3e;
+
 }
 .header_bottom ul {
   display: flex;
   list-style: none;
   padding: 5px 30px 10px 30px;
   align-items: center;
+  
 }
 .header_bottom ul li {
   color: white;
   margin-right: 20px;
 }
-
+.header_bottom ul li a{
+  color: #fff;
+  text-decoration: none;
+}
 .header_nav {
   color: white;
   display: flex;

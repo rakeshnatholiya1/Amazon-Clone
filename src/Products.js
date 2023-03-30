@@ -1,21 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import "./css/Products.css";
 
-function Products({ productsList, addToCart }) {
-  // console.log(addToCart);
+function Products({ productsList, addToCart, fetchProductsbyCategories }) {
+  console.log(productsList[0])
+  let { slug } = useParams();
+  console.log(slug);
+  useEffect(() => {
+    if (slug) {
+      fetchProductsbyCategories(slug);
+    }
+  }, [slug]);
   return (
     <div className="products_wrap">
-      {productsList[0]?.map((prod) => {
+      {productsList.map((prod) => {
         return (
           <>
+          <div className="product_main">
             <div className="product" key={prod}>
-              <img src={prod.image.url} alt="" />
+              <img src={prod?.image.url} alt="" />
 
-              <h3>{prod.name}</h3>
+              <h3>{prod?.name}</h3>
 
-              <p>{prod.price.formatted_with_symbol}</p>
-              <button onClick={() => addToCart(prod.id, 1)}>Add to Cart</button>
+              <p>{prod?.price.formatted_with_symbol}</p>
+              <button onClick={() => addToCart(prod?.id, 1)}>
+                Add to Cart
+              </button>
+
+              <div className="product_description">
+
+             <p> {prod?.description.replace(/(<([^>]+)>)/gi, "")} </p>
+
+              </div>
             </div>
+              
+              </div>
           </>
         );
       })}

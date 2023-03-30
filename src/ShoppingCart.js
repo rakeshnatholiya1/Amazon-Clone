@@ -29,7 +29,7 @@ function ShoppingCart({ cart, RemoveFromCart }) {
                   </strong>
                 </p>
                 <button onClick={() => RemoveFromCart(item.id)}>
-                  Remove from Basket
+                  Remove from Cart
                 </button>
               </div>
             </div>
