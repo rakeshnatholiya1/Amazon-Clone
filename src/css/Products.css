@@ -45,12 +45,12 @@
   background-color: white;
   padding: 10%;
   margin: 0px 1%;
-  width: 70%;
+  width: 350px;
   /* border: 2px solid red; */
   text-align: center;
   box-shadow: 0px 0px 10px rgb(0 0 0/37%);
   margin-bottom: 50px;
-  min-height: 500px;
+  min-height: 400px;
   border-radius: 10px;
 }
 .products_wrap .product p {
@@ -77,7 +77,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: auto;
-    margin-top: -60px;
+    margin-top: -300px;
   }
   .products_wrap .product_main {
     display: flex;
@@ -130,6 +130,7 @@
     margin-bottom: 25px;
     min-height: 250px;
     border-radius: 5px;
+   
   }
   .products_wrap .product p {
     color: #cd9042;
