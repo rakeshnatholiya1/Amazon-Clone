@@ -15,13 +15,21 @@
   background: #131922;
   padding: 5px;
 }
+.header .header_logo_location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 15%;
+  border: 2px solid red;
+}
 .header_location {
   color: white;
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  font-size: 14px;
-  width: 14%;
+  font-size: 10px;
+  width: 50%;
   line-height: 1;
   justify-content: center;
 }
@@ -220,9 +228,8 @@
     border-left: 1px solid #cd9042;
     border-top: 1px solid #cd9042;
     border-bottom: 1px solid #cd9042;
-    font-size: 40px;
-    font-weight: bold;
   }
+  
   .header_bottom {
     background: #232f3e;
     width: 100%;
