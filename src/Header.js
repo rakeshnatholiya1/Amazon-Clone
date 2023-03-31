@@ -9,6 +9,7 @@ function header({ cart, categories }) {
   return (
     <>
       <div className="header">
+        <div className="header_logo_location">
         <Link to="/">
           <img src=".\logo2.png" alt="logo" className="header_logo" />
         </Link>
@@ -19,6 +20,7 @@ function header({ cart, categories }) {
             <LocationOnIcon className="header_locationIcon" />
             Rajasthan 0000
           </span>
+        </div>
         </div>
         <div className="header_search">
           <input type="text" />
