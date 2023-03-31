@@ -49,8 +49,8 @@ function header({ cart, categories }) {
         <ul>
           {categories?.map((category) => {
             return (
-              <li key={category.id}>
-                <Link to={`/category/${category.slug}`}>{category.name}</Link>
+              <li key={category?.id}>
+                <Link to={`/category/${category?.slug}`}>{category?.name}</Link>
               </li>
             );
           })}

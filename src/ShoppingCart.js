@@ -12,10 +12,13 @@ function ShoppingCart({ cart, RemoveFromCart }) {
 
         <div>
           <h3>Hello Rakesh</h3>
-          <h2 className="checkout_title">Your Shopping Basket</h2>
+          <h2 className="checkout_title">Your Shopping Cart</h2>
         </div>
 
         {cart?.line_items?.map((item) => {
+          {
+            console.log(item.price);
+          }
           return (
             <div className="checkout_product" key={item.id}>
               <img src={item.image.url} alt="" />
@@ -23,9 +26,9 @@ function ShoppingCart({ cart, RemoveFromCart }) {
                 <p className="checkout_product_title">{item.name}</p>
                 <p className="checkout_product_price">
                   <strong>
-                    {item.price.formatted_with_symbol} * {item.quantity} ={" "}
-                    {cart.currency.symbol}
-                    {item.price.raw * item.quantity}
+                    {item?.price?.formatted_with_symbol} * {item?.quantity} ={" "}
+                    {cart?.currency.symbol}
+                    {item?.price.raw * item?.quantity}
                   </strong>
                 </p>
                 <button onClick={() => RemoveFromCart(item.id)}>
@@ -46,7 +49,7 @@ function ShoppingCart({ cart, RemoveFromCart }) {
             <input type="checkbox" /> This order conatin a gift
           </small>
         </div>
-        <button>Proceed to Checkout</button>
+        <button className="checkout_rightBtn">Proceed to Checkout</button>
       </div>
     </div>
   );
