@@ -21,7 +21,6 @@
   align-items: center;
   gap: 10px;
   width: 15%;
-  
 }
 .header_location {
   color: white;
@@ -229,7 +228,7 @@
     border-top: 1px solid #cd9042;
     border-bottom: 1px solid #cd9042;
   }
-  
+
   .header_bottom {
     background: #232f3e;
     width: 100%;

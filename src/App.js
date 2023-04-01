@@ -14,7 +14,6 @@ function App() {
   const fetchProducts = async () => {
     const response = await commerce.products.list();
     setProductsList(response.data);
-    console.log(response);
   };
 
   const fetchProductsbyCategories = async (category) => {
@@ -27,7 +26,6 @@ function App() {
   const addToCart = async (productId, quntity) => {
     const response = await commerce.cart.add(productId, quntity);
     setCart(response);
-    console.log(response);
   };
 
   const fetchCart = async () => {
