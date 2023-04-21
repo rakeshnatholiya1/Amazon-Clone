@@ -62,12 +62,13 @@
 }
 .footer_box2 .footer_sub_box2 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .footer_box2 .footer_sub_box2 a {
   color: #fff;
   text-decoration: none;
+  
 }
 .footer_box2 .footer_sub_box2 a:hover {
   text-decoration: underline;
