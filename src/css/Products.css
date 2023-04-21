@@ -76,7 +76,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: auto;
-    margin-top: -100px;
+    margin-top: 50px;
   }
   .products_wrap .product_main {
     display: flex;
@@ -167,6 +167,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
   .products_wrap .product_main .product_description {
     width: 50%;
