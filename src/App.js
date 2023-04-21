@@ -4,6 +4,7 @@ import ShoppingCart from "./ShoppingCart";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import commerce from "./lib/commerce";
 import { useEffect, useState } from "react";
+import Footer from "./Footer";
 
 function App() {
   const [productsList, setProductsList] = useState([]);
@@ -73,6 +74,7 @@ function App() {
             />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

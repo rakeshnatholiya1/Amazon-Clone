@@ -1,0 +1,112 @@
+.footer_container .footer_box1 {
+  background-color: #00080fda;
+}
+.footer_container .footer_box1 .footer_sub_box1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer_sub_box1_content {
+  padding: 50px;
+  line-height: 2rem;
+}
+.footer_sub_box1_content ul p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+}
+.footer_sub_box1_content ul a {
+  list-style: none;
+  text-decoration: none;
+  color: #dfd9d9;
+}
+.footer_sub_box1_content ul a:hover {
+  text-decoration: underline;
+}
+.footer_box1 .footer_sub_box1_lang {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+.footer_box1 .footer_sub_box1_lang img {
+  width: 110px;
+}
+.footer_box1 .footer_sub_box1_lang select {
+  background-color: transparent;
+  width: 140px;
+  color: #fff;
+  text-align: center;
+}
+.footer_box1 .footer_sub_box1_lang select option {
+  color: black;
+}
+.footer_box1 .footer_sub_box1_conteries {
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer_box1 .footer_sub_box1_conteries a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 5px;
+}
+.footer_box1 .footer_sub_box1_conteries a:hover {
+  text-decoration: underline;
+}
+.footer_box2 {
+  min-height: 200px;
+  background-color: rgba(0, 0, 0, 0.925);
+  line-height: 2rem;
+  padding: 40px;
+}
+.footer_box2 .footer_sub_box2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_box2 .footer_sub_box2 a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer_box2 .footer_sub_box2 a:hover {
+  text-decoration: underline;
+}
+.footer_box2 .footer_sub_box2 a p span {
+  color: rgb(156, 152, 152);
+  padding-left: 5px;
+}
+.footer_box2 .footer_box2_copyright {
+  padding: 30px 0px;
+}
+.footer_box2 .footer_box2_copyright div {
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 2px 0px;
+}
+.footer_box2 .footer_box2_copyright div a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 9px;
+}
+.footer_box2 .footer_box2_copyright div a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .footer_container .footer_box1 .footer_sub_box1 {
+    display: inline;
+  }
+  .footer_box1 .footer_sub_box1_conteries {
+    visibility: hidden;
+    height: 40px;
+  }
+  .footer_box2 .footer_box2_copyright div {
+    font-size: 11px;
+  }
+  .footer_box2 .footer_sub_box2 {
+  font-size: 11px;
+ display: inline;
+ text-align: center;
+  }
+}
