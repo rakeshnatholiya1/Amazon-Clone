@@ -1,70 +1,10 @@
-# Getting Started with Create React App
+Desktop
+![Screenshot (113)](https://user-images.githubusercontent.com/122821355/235488137-2d27a0fb-a3c4-4a4f-b2a7-7aab95a64a09.png)
+![Screenshot (114)](https://user-images.githubusercontent.com/122821355/235488197-17f2cc32-e234-469d-9804-83870a03bea1.png)
+![Screenshot (115)](https://user-images.githubusercontent.com/122821355/235488217-ba900ebd-ee37-4b3b-8746-b54fbec20fab.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mobile
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![WhatsApp Image 2023-05-01 at 10 07 53 PM](https://user-images.githubusercontent.com/122821355/235489648-5225b387-892f-4397-b20e-8b287f3bb2e6.jpeg)
+![WhatsApp Image 2023-05-01 at 10 07 21 PM](https://user-images.githubusercontent.com/122821355/235489673-e19dde5f-1a1c-4004-a709-24f74d61a4ce.jpeg)
+![WhatsApp Image 2023-05-01 at 10 06 54 PM](https://user-images.githubusercontent.com/122821355/235489697-809a99f7-08e7-4fc8-8369-b38187aeeb2c.jpeg)
