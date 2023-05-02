@@ -1,4 +1,15 @@
-____________________________________________________________________**Desktop**_________________________________________________________________________________________
+**Features:**
+
+Commercejs API, 
+Dynamic products with Name, price & description, 
+Dynamic categories, 
+Add to cart & remove from cart, 
+Responsive
+Tech Stack : React js 
+
+**Description:** Built a responsive web app using React JS and Commercejs API for dynamic product and category management, adding to and removing from a cart. Demonstrates proficiency in frontend and backend development(Commercejs), efficient data management
+___________________________________________
+______________________**Desktop**_________________________________________________________________________________________
 
 Home Page :
 ![Screenshot (113)](https://user-images.githubusercontent.com/122821355/235488137-2d27a0fb-a3c4-4a4f-b2a7-7aab95a64a09.png)
